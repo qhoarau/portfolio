@@ -11,6 +11,12 @@
   transition: top 0.5s ease-in-out;
 }
 
+.navbar__icon-container {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: var(--color-primary);
+  padding: 0.5rem;
+}
 .navbar__icon-img {
   min-height: 40px;
   min-width: 40px;
@@ -19,10 +25,8 @@
   background-image: url("../../assets/quentin-portrait.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  border-width: 1px;
-  border-style: dotted;
-  border-color: var(--color-primary);
-  padding: 0.5rem;
+  
+
 }
 .navbar__main-container--hide {
   top: -50%;
