@@ -1,0 +1,30 @@
+.mail__main-container {
+  width: 40px;
+  position: fixed;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  bottom: 4rem;
+}
+
+.mail__main-container a {
+  margin: 20px auto;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: var(--color-gray);
+}
+
+.mail__main-container a:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1080px) {
+  .mail__mail-text {
+    left: auto;
+    right: 20px;
+  }
+}

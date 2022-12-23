@@ -1,0 +1,30 @@
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1f39;
+}
+
+.loader-spinner {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-image: url("../../assets/image_processing20200421-24270-dykx33.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background: rgba(0, 0, 0, 0.834)
+        url("../../assets/image_processing20200421-24270-dykx33.gif") center
+        no-repeat; */
+}
+
+
+/* @keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */

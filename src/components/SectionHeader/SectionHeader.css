@@ -1,0 +1,16 @@
+.section-header__main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-header__title {
+  margin-left: 1rem;
+}
+
+.section-header__bar {
+  height: 1px;
+  width: 30%;
+  background-color: var(--color-gray);
+  margin: 0rem 2rem;
+}

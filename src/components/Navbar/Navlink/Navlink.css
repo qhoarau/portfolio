@@ -1,0 +1,21 @@
+.navlink-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+.navlink-number {
+  color: var(--color-primary);
+}
+
+.navlink-title {
+  padding-left: 0.5rem;
+  color: inherit;
+}
+
+.navlink-container:hover {
+  color: var(--color-primary);
+}

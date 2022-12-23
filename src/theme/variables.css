@@ -1,0 +1,266 @@
+:root {
+  --color-primary: #15f7f8;
+  --color-secondary: #1d1f39;
+  --color-gray: #b0b0b0;
+  --color-white: #f2f2f2;
+  --color-primary-background: #15f7f866;
+  --fz-sm: 18px;
+  --fz-xs: 16px;
+}
+
+/* text */
+.text-colored-small {
+  color: var(--color-primary);
+  font-size: 16px;
+  padding: 0.3rem 0;
+  line-height: 150%;
+}
+
+.text-gray-small {
+  color: var(--color-gray);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3rem 0;
+  line-height: 150%;
+}
+
+.text-colored-medium {
+  color: var(--color-primary);
+  font-size: 24px;
+  padding: 0.3rem 0;
+}
+
+.text-white-medium {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.text-gray-medium {
+  color: var(--color-gray);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.text-white-big {
+  color: var(--color-white);
+  font-size: 7vw;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.text-gray-big {
+  color: var(--color-gray);
+  font-size: 7vw;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  line-height: 120%;
+}
+
+/* animations */
+.popup_animation {
+  transition: transform 0.2s;
+}
+
+.popup_animation:hover {
+  transform: translateY(-8%);
+}
+.animation_fromTop_1 {
+  -webkit-animation: fadeInFromTop 1.5s 0s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0s backwards; /* Opera < 12.1 */
+  animation: fadeInFromTop 1.5s 0s backwards;
+}
+
+.animation_fromTop_2 {
+  -webkit-animation: fadeInFromTop 1.5s 0.25s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.25s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.25s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.25s backwards; /* Opera < 12.1 */
+  animation: fadeInFromTop 1.5s 0.25s backwards;
+}
+
+.animation_fromTop_3 {
+  -webkit-animation: fadeInFromTop 1.5s 0.5s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.5s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.5s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.5s backwards; /* Opera < 12.1 */
+  animation: fadeInFromTop 1.5s 0.5s backwards;
+}
+
+.animation_fromTop_4 {
+  -webkit-animation: fadeInFromTop 1.5s 0.75s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.75s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.75s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.75s backwards; /* Opera < 12.1 */
+  animation: fadeInFromTop 1.5s 0.75s backwards;
+}
+
+.animation_fromTop_5 {
+  -webkit-animation: fadeInFromTop 1.5s 1s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 1s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 1s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 1s backwards; /* Opera < 12.1 */
+  animation: fadeInFromTop 1.5s 1s backwards;
+}
+
+.animation_fromBottom_1 {
+  -webkit-animation: fadeInFromBottom 1.5s 0s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0s backwards; /* Opera < 12.1 */
+  animation: fadeInFromBottom 1.5s 0s backwards;
+}
+
+.animation_fromBottom_2 {
+  -webkit-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Opera < 12.1 */
+  animation: fadeInFromBottom 1.5s 0.25s backwards;
+}
+
+.animation_fromBottom_3 {
+  -webkit-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Opera < 12.1 */
+  animation: fadeInFromBottom 1.5s 0.5s backwards;
+}
+
+.animation_fromBottom_4 {
+  -webkit-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Opera < 12.1 */
+  animation: fadeInFromBottom 1.5s 0.75s backwards;
+}
+
+.animation_fromBottom_5 {
+  -webkit-animation: fadeInFromBottom 1.5s 1s backwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 1s backwards; /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 1s backwards; /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 1s backwards; /* Opera < 12.1 */
+  animation: fadeInFromBottom 1.5s 1s backwards;
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

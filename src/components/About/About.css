@@ -1,0 +1,38 @@
+.about-section__main-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* height: 100vh; */
+}
+
+.about-section__bio-container {
+  width: auto;
+  float: left;
+}
+
+.about-section__skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 1rem;
+  padding: 0;
+  margin: 2rem 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.about-section__skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.about-section__skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  color: var(--color-primary);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}

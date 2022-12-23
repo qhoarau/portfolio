@@ -1,0 +1,25 @@
+.social__main-container {
+  position: fixed;
+  width: 40px;
+  right: auto;
+  left: 40px;
+  z-index: 10;
+  bottom: 4rem;
+}
+
+.social__item {
+  padding: 0.5rem 0;
+  color: var(--color-gray);
+  cursor: pointer;
+}
+
+.social__item:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1080px) {
+  .social__main-container {
+    right: auto;
+    left: 20px;
+  }
+}

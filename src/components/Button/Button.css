@@ -1,0 +1,16 @@
+.button__container {
+  padding: 0.7rem 1.5rem;
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 0.12rem;
+  border-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.button__title {
+  color: var(--color-primary);
+}
+
+.button__container:hover {
+  background-color: var(--color-primary-background);
+}
