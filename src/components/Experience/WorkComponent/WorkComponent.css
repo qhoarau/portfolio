@@ -1,0 +1,120 @@
+.work-component__main-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+
+
+}
+
+.work-component__place-container {
+    padding: 0 2rem;
+
+}
+
+.work-component__place-item-container {
+    cursor: pointer;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+}
+
+.work-component__place-item--selected {
+    position: relative;
+    padding: 1rem;
+    color: var(--color-primary);
+    background-color: var(--color-primary-background);
+    font-size: 16px;
+    width: 100%;
+
+}
+
+.work-component__place-item--not-selected {
+    position: relative;
+    padding: 1rem;
+    color: var(--color-gray);
+    font-size: 16px;
+    width: 100%;
+
+}
+
+.work-component__place-item--not-selected:hover {
+    background-color: var(--color-primary-background);
+    color: var(--color-primary);
+
+}
+
+.work-component__left-border--selected {
+
+
+
+    background-color: var(--color-primary);
+    width: 2px;
+    height: 50px;
+
+
+}
+
+.work-component__left-border--not-selected {
+
+
+    height: 0px;
+    background-color: #fff;
+    width: 2px;
+
+}
+
+.work-component__skills-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(140px, 600px));
+    gap: 0px 1rem;
+    padding: 0;
+    /* margin: 2rem 0px 0px; */
+    overflow: hidden;
+    list-style: none;
+
+}
+
+.work-component__skills-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+}
+
+.work-component__skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    color: var(--color-primary);
+    font-size: 24px;
+    line-height: 12px;
+}
+
+.animation_borderFromTop {
+    -webkit-animation: borderFromTop 1s 0s backwards;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: borderFromTop 1s 0s backwards;
+    /* Firefox < 16 */
+    -ms-animation: borderFromTop 1s 0s backwards;
+    /* Internet Explorer */
+    -o-animation: borderFromTop 1s 0s backwards;
+    /* Opera < 12.1 */
+    animation: borderFromTop 1s 0s backwards;
+}
+
+
+@keyframes borderFromTop {
+    from {
+        height: 0;
+
+
+    }
+
+    to {
+        height: 50px;
+
+    }
+}

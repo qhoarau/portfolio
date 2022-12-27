@@ -1,12 +1,21 @@
 .about-section__main-container {
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
-  /* height: 100vh; */
+  height: 80vh;
 }
 
 .about-section__bio-container {
-  width: auto;
+  width: 65%;
   float: left;
+  margin: 0 3%;
+  padding: 2%;
+}
+
+.about-section__img-container {
+  width: 25%;
+  margin: 0 3%;
+  position: relative;
+
 }
 
 .about-section__skills-list {
@@ -17,6 +26,12 @@
   margin: 2rem 0px 0px;
   overflow: hidden;
   list-style: none;
+}
+
+.about-section__bio-img-container {
+  display: flex;
+  flex-direction: row;
+
 }
 
 .about-section__skills-list li {
@@ -35,4 +50,51 @@
   color: var(--color-primary);
   font-size: var(--fz-sm);
   line-height: 12px;
+}
+
+.about-section__img-item {
+  min-height: 40px;
+  min-width: 40px;
+  aspect-ratio: 1;
+  border-radius: 2%;
+  background-image: url("../../assets/quentin-portrait.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.about-section__img-item:hover {
+  filter: none;
+}
+
+.about-section__img-item:hover {
+  filter: none;
+}
+
+.about-section__img-item:hover+.about-section__img-item--border {
+  transform: translate(-4%, -4%);
+}
+
+.about-section__img-item--border {
+  aspect-ratio: 1;
+  min-height: 40px;
+  min-width: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2%;
+  border-color: var(--color-primary);
+  position: absolute;
+  left: 20px;
+  right: -20px;
+  top: 20px;
+  bottom: -20px;
+  z-index: 2;
+  transition: transform 0.2s;
+
 }

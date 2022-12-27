@@ -3,9 +3,13 @@
   --color-secondary: #1d1f39;
   --color-gray: #b0b0b0;
   --color-white: #f2f2f2;
-  --color-primary-background: #15f7f866;
+  --color-primary-background: #15f7f819;
+  --color-primary-background-transparent: rgba(29, 31, 57, 0.7);
   --fz-sm: 18px;
   --fz-xs: 16px;
+  --work-background-img-1: "";
+  --work-background-img-2: "";
+  --work-background-img-3: "";
 }
 
 /* text */
@@ -14,6 +18,7 @@
   font-size: 16px;
   padding: 0.3rem 0;
   line-height: 150%;
+  text-decoration: none;
 }
 
 .text-gray-small {
@@ -22,12 +27,41 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 0.3rem 0;
   line-height: 150%;
+  text-decoration: none;
 }
+
+.text-colored-xmedium {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3rem 0;
+  text-decoration: none;
+}
+
+.text-white-xmedium {
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.text-gray-xmedium {
+  color: var(--color-gray);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
 
 .text-colored-medium {
   color: var(--color-primary);
   font-size: 24px;
   padding: 0.3rem 0;
+  text-decoration: none;
 }
 
 .text-white-medium {
@@ -35,6 +69,7 @@
   font-size: 24px;
   font-weight: bold;
   padding: 0.5rem 0;
+  text-decoration: none;
 }
 
 .text-gray-medium {
@@ -42,21 +77,52 @@
   font-size: 24px;
   font-weight: bold;
   padding: 0.5rem 0;
+  text-decoration: none;
 }
 
 .text-white-big {
   color: var(--color-white);
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: bold;
   padding: 0.5rem 0;
+  text-decoration: none;
 }
 
 .text-gray-big {
   color: var(--color-gray);
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: bold;
   padding: 0.5rem 0;
   line-height: 120%;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .text-gray-big {
+
+    font-size: 72px;
+
+  }
+
+  .text-white-big {
+
+    font-size: 72px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text-gray-big {
+
+    font-size: 36px;
+
+  }
+
+  .text-white-big {
+
+    font-size: 36px;
+
+  }
 }
 
 /* animations */
@@ -64,94 +130,145 @@
   transition: transform 0.2s;
 }
 
+.scale-up_animation {
+  transition: transform 0.2s;
+}
+
+.scale-up_animation:hover {
+  transform: scale(1.2);
+}
+
 .popup_animation:hover {
   transform: translateY(-8%);
 }
+
 .animation_fromTop_1 {
-  -webkit-animation: fadeInFromTop 1.5s 0s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromTop 1.5s 0s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromTop 1.5s 0s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromTop 1.5s 0s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromTop 1.5s 0s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromTop 1.5s 0s backwards;
 }
 
 .animation_fromTop_2 {
-  -webkit-animation: fadeInFromTop 1.5s 0.25s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromTop 1.5s 0.25s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromTop 1.5s 0.25s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromTop 1.5s 0.25s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromTop 1.5s 0.25s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.25s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.25s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.25s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromTop 1.5s 0.25s backwards;
 }
 
 .animation_fromTop_3 {
-  -webkit-animation: fadeInFromTop 1.5s 0.5s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromTop 1.5s 0.5s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromTop 1.5s 0.5s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromTop 1.5s 0.5s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromTop 1.5s 0.5s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.5s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.5s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.5s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromTop 1.5s 0.5s backwards;
 }
 
 .animation_fromTop_4 {
-  -webkit-animation: fadeInFromTop 1.5s 0.75s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromTop 1.5s 0.75s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromTop 1.5s 0.75s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromTop 1.5s 0.75s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromTop 1.5s 0.75s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 0.75s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 0.75s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 0.75s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromTop 1.5s 0.75s backwards;
 }
 
 .animation_fromTop_5 {
-  -webkit-animation: fadeInFromTop 1.5s 1s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromTop 1.5s 1s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromTop 1.5s 1s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromTop 1.5s 1s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromTop 1.5s 1s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromTop 1.5s 1s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromTop 1.5s 1s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromTop 1.5s 1s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromTop 1.5s 1s backwards;
 }
 
 .animation_fromBottom_1 {
-  -webkit-animation: fadeInFromBottom 1.5s 0s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 0s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 0s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 0s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromBottom 1.5s 0s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromBottom 1.5s 0s backwards;
 }
 
 .animation_fromBottom_2 {
-  -webkit-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 0.25s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromBottom 1.5s 0.25s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.25s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.25s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.25s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromBottom 1.5s 0.25s backwards;
 }
 
 .animation_fromBottom_3 {
-  -webkit-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 0.5s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromBottom 1.5s 0.5s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.5s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.5s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.5s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromBottom 1.5s 0.5s backwards;
 }
 
 .animation_fromBottom_4 {
-  -webkit-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 0.75s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromBottom 1.5s 0.75s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 0.75s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 0.75s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 0.75s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromBottom 1.5s 0.75s backwards;
 }
 
 .animation_fromBottom_5 {
-  -webkit-animation: fadeInFromBottom 1.5s 1s backwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 1s backwards; /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 1s backwards; /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 1s backwards; /* Opera < 12.1 */
+  -webkit-animation: fadeInFromBottom 1.5s 1s backwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInFromBottom 1.5s 1s backwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInFromBottom 1.5s 1s backwards;
+  /* Internet Explorer */
+  -o-animation: fadeInFromBottom 1.5s 1s backwards;
+  /* Opera < 12.1 */
   animation: fadeInFromBottom 1.5s 1s backwards;
 }
+
 
 @keyframes fadeInFromTop {
   from {
     opacity: 0;
     transform: translateY(-70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -164,6 +281,7 @@
     opacity: 0;
     transform: translateY(-70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -176,6 +294,7 @@
     opacity: 0;
     transform: translateY(-70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -188,6 +307,7 @@
     opacity: 0;
     transform: translateY(-70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -200,6 +320,7 @@
     opacity: 0;
     transform: translateY(-70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -211,6 +332,7 @@
     opacity: 0;
     transform: translateY(70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -223,6 +345,7 @@
     opacity: 0;
     transform: translateY(70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -235,6 +358,7 @@
     opacity: 0;
     transform: translateY(70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -247,6 +371,7 @@
     opacity: 0;
     transform: translateY(70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -259,6 +384,7 @@
     opacity: 0;
     transform: translateY(70%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);

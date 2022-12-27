@@ -1,0 +1,22 @@
+.link-item {
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.link-item::before {
+    content: "";
+    /* display: block; */
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0.30em;
+    background-color: var(--color-primary);
+    transition: 0.3s;
+
+}
+
+.link-item:hover::before {
+    width: 100%;
+
+}

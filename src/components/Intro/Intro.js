@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import Link from "../Link/Link";
 
 import "./Intro.css";
 
@@ -23,18 +24,13 @@ export default function Intro() {
           full stack web app. Currently, I’m focused on
         </div>
         <div className="text-gray-small animation_fromBottom_3">
-          building an online food ordering and products management platform{" "}
-          <a
-            className="intro__text-link animation_fromBottom_3"
-            href="https://iziup.fr"
-          >
-            IziUp
-          </a>
+          building an online food ordering and products management platform at {" "}
+          <Link title={"IziUp"} link={"https://iziup.fr/"} />
           .
         </div>
       </div>
       <div className="intro__button-container animation_fromBottom_3">
-        <Button title={"Check out my course ! "} />
+        <Button title={"Check out my tik tok clone ! "} link={"https://chap-fun.com"} />
       </div>
     </div>
   );

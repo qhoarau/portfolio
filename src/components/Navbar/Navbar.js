@@ -8,6 +8,9 @@ import "./Navbar.css";
 export default function Navbar() {
   const scrollDirection = useScrollDirection();
 
+  const onPortraitClick = () => {
+    window.location.reload(false);
+  }
   return (
     <div
       className={
@@ -16,7 +19,7 @@ export default function Navbar() {
           : "navbar__main-container"
       }
     >
-      <div className="navbar__icon-container">
+      <div className="navbar__icon-container scale-up_animation" onClick={onPortraitClick}>
         <div className="navbar__icon-img"></div>
       </div>
       <div className="navbar__navlink-container">
