@@ -23,3 +23,20 @@
     left: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .social__main-container {
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .social__item {
+    padding: 0.5rem 1rem;
+    color: var(--color-gray);
+    cursor: pointer;
+  }
+}

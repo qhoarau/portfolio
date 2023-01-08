@@ -7,6 +7,16 @@
   color: var(--color-gray);
 }
 
+.navlink-container--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
 .navlink-number {
   color: var(--color-primary);
 }
@@ -16,6 +26,21 @@
   color: inherit;
 }
 
+.navlink-title--mobile {
+  color: inherit;
+  font-size: 18px;
+
+
+}
+
+.navlink-number--mobile {
+  color: var(--color-primary);
+}
+
 .navlink-container:hover {
+  color: var(--color-primary);
+}
+
+.navlink-container--mobile:hover {
   color: var(--color-primary);
 }

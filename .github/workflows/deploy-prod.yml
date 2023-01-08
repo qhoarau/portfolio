@@ -1,0 +1,24 @@
+# Deploy on dev job for github actions
+
+name: Deploy Firebase Serverless on Dev Project
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install npm packages
+        run: |
+          npm install
+      - name: Build Ionic PWA
+        run: |
+          npm run build
+      - name: Deploy on firebase hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: portfolio-92dcb
+          channelId: live

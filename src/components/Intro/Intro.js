@@ -30,7 +30,7 @@ export default function Intro() {
         </div>
       </div>
       <div className="intro__button-container animation_fromBottom_3">
-        <Button title={"Check out my tik tok clone ! "} link={"https://chap-fun.com"} />
+        <Button title={"Check out Chap !"} link={"https://chap-fun.com"} />
       </div>
     </div>
   );

@@ -12,6 +12,8 @@
   backdrop-filter: blur(6px);
   transition: top 0.5s ease-in-out;
 
+
+
 }
 
 .navbar__icon-container {
@@ -47,4 +49,107 @@
   flex-direction: row;
   align-items: center;
   padding: 0.5rem 0.5rem;
+}
+
+.navbar__navlink-container--mobile {
+  display: none;
+  padding: 1rem;
+}
+
+.navbar__menu-icon {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.navbar__mobile-overlay--main-container {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.4rem;
+  background-color: var(--color-primary-background-transparent); */
+  backdrop-filter: blur(6px);
+  transition: top 0.5s ease-in-out;
+}
+
+.navbar__mobile-overlay--link-container {
+  text-align: center;
+}
+
+.navbar__mobile-overlay--link-container--close {
+  height: 100%;
+  width: min(75vw, 400px);
+  background-color: var(--color-tertiary);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  padding: 1rem;
+  animation: translate_from_right 0.5s 0s backwards;
+
+}
+
+.navbar__mobile-overlay--link-container--open {
+  height: 100%;
+  width: min(75vw, 400px);
+  background-color: var(--color-tertiary);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  padding: 1rem;
+  animation: translate_from_right-reverse 0.5s 0s backwards;
+
+}
+
+.navbar__mobile-overlay--close-container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.navbar__mobile-overlay--button-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+@keyframes translate_from_right {
+  from {
+    transform: translateX(100%);
+
+
+  }
+
+  to {
+    transform: translateX(0);
+
+  }
+}
+
+@keyframes translate_from_right-reverse {
+  from {
+    transform: translateX(0);
+
+
+  }
+
+  to {
+    transform: translateX(100%);
+
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar__navlink-container {
+    display: none;
+
+  }
+
+  .navbar__navlink-container--mobile {
+    display: block;
+  }
 }

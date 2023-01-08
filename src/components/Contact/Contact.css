@@ -1,0 +1,16 @@
+.contact__main-container {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.contact__content {
+    max-width: 50%;
+    text-align: center;
+    margin: 2rem 0;
+}

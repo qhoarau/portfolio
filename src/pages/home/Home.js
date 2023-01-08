@@ -10,6 +10,7 @@ import Mail from "../../components/Mail/Mail";
 import About from "../../components/About/About";
 import Experience from "../../components/Experience/Experience";
 import Work from "../../components/Work/Work";
+import Contact from "../../components/Contact/Contact";
 
 const ratioThreshold = 0.15;
 const observerOptions = {
@@ -24,6 +25,7 @@ export default function Home() {
   const [experienceVisible, setexperienceVisible] = useState(false);
   const [workVisible, setworkVisible] = useState(false);
   const [contactVisible, setcontactVisible] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
 
@@ -48,7 +50,7 @@ export default function Home() {
           default:
             break;
         }
-        entry.target.classList.add("animation_fromBottom_1");
+        // entry.target.classList.add("animation_fromBottom_1");
 
       }
     });
@@ -81,17 +83,18 @@ export default function Home() {
       {isLoading ? (
         <Loader />
       ) : (
-        <div className="home__main-container">
-          <Navbar />
+        <div className={mobileMenuOpen ? "home__main-container--no-scroll" : "home__main-container"}>
+          <Navbar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
           <div className="home__page-container">
-            <Social />
+
             <div className="home__main-page-container">
               <Intro />
               <About isVisible={aboutVisible} className="home__main-page-section" />
               <Experience isVisible={experienceVisible} className="home__main-page-section" />
               <Work isVisible={workVisible} className="home__main-page-section" />
+              <Contact isVisible={contactVisible} className="home__main-page-section" />
             </div>
-
+            <Social />
             <Mail />
           </div>
         </div>

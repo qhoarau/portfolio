@@ -28,3 +28,9 @@
     right: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .mail__main-container {
+    display: none;
+  }
+}

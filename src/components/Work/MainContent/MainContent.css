@@ -1,0 +1,8 @@
+.main-content__main-container {
+    background-color: var(--color-tertiary);
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    padding: 1rem;
+    border-radius: 2%;
+
+    /* background-color: red; */
+}
