@@ -33,7 +33,7 @@
 
   aspect-ratio: 1;
   border-radius: 100%;
-  background-image: url("../../assets/quentin-portrait.png");
+  background-image: url("../../../public/assets/quentin-portrait.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 

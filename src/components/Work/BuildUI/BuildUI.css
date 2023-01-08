@@ -1,5 +1,5 @@
 .build-ui__background-item--chap {
-    background-image: url("../../../assets/chap-capture.png");
+    background-image: url("../../../../public/assets/chap-capture.png");
 
     height: 350px;
     border-radius: 1%;
@@ -22,7 +22,7 @@
 }
 
 .build-ui__background-item--iziup {
-    background-image: url("../../../assets/iziup-capture.png");
+    background-image: url("../../../../public/assets/iziup-capture.png");
     height: 250px;
     border-radius: 1%;
     background-size: contain;

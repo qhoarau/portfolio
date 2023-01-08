@@ -55,7 +55,7 @@
   min-width: 40px;
   aspect-ratio: 1;
   border-radius: 2%;
-  background-image: url("../../assets/quentin-portrait.png");
+  background-image: url("../../../public/assets/quentin-portrait.png");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
