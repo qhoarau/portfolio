@@ -207,15 +207,15 @@
 }
 
 .animation_fromBottom_1 {
-  -webkit-animation: fadeInFromBottom 1.5s 0s backwards;
+  -webkit-animation: fadeInFromBottom 1.5s 0.1s backwards;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInFromBottom 1.5s 0s backwards;
+  -moz-animation: fadeInFromBottom 1.5s 0.1s backwards;
   /* Firefox < 16 */
-  -ms-animation: fadeInFromBottom 1.5s 0s backwards;
+  -ms-animation: fadeInFromBottom 1.5s 0.1s backwards;
   /* Internet Explorer */
-  -o-animation: fadeInFromBottom 1.5s 0s backwards;
+  -o-animation: fadeInFromBottom 1.5s 0.1s backwards;
   /* Opera < 12.1 */
-  animation: fadeInFromBottom 1.5s 0s backwards;
+  animation: fadeInFromBottom 1.5s 0.1s backwards;
 }
 
 .animation_fromBottom_2 {
