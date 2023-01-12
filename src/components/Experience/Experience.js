@@ -18,6 +18,17 @@ const list = [
     ],
   },
   {
+    sectionTitle: "Horizon Pro",
+    post: "Developer fullstack",
+    company: "Horizon Pro",
+    from: "October 2022",
+    to: "now",
+    tasks: [
+      "Made the back office production ready",
+      "Communicate with the client on daily basis",
+    ],
+  },
+  {
     sectionTitle: "Okina",
     post: "Project manager",
     company: "Okina",
