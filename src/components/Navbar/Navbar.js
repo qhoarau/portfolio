@@ -46,7 +46,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }) {
           <Navlink number={"2"} title={"Experience"} />
           <Navlink number={"3"} title={"Work"} />
           <Navlink number={"4"} title={"Contact"} />
-          <Button title={"Resume"} outline classes={"animation_fromTop_5"} />
+          <Button title={"Resume"} outline classes={"animation_fromTop_5"} link={"assets/CV-Quentin-Hoarau-17-01-2023-21-56-58.pdf"} />
         </div>
         <div className="navbar__navlink-container--mobile">
           <FiMenu
@@ -76,7 +76,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }) {
               <Navlink number={"3"} title={"Work"} isMobile handleCloseMenu={handleCloseMenu} />
               <Navlink number={"4"} title={"Contact"} isMobile handleCloseMenu={handleCloseMenu} />
               <div className="navbar__mobile-overlay--button-container">
-                <Button title={"Resume"} outline />
+                <Button title={"Resume"} outline link="assets/CV-Quentin-Hoarau-17-01-2023-21-56-58.pdf" />
               </div>
               <div>
 
